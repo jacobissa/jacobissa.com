@@ -1,8 +1,6 @@
-- 👋 Hi, I’m @jacobissa
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning CS
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- :wave:				Hi, I’m @jacobissa
+- :man_technologist:	I study CS at @th-nuernberg
+- :chess_pawn:			I’m interested in playing chess
 
 <!---
 jacobissa/jacobissa is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
