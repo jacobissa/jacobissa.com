@@ -1,4 +1,4 @@
-- :wave:		 	Hi, I’m Jacob Issa
+- :wave:		 	Hi, I’m Jacob
 - :man_technologist:		I study CS at @th-nuernberg
 - :chess_pawn:			I’m interested in playing chess
 
