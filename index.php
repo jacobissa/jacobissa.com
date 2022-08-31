@@ -1,5 +1,6 @@
 <?php
 $bootstrap_version = "5.2.0";
+$jquery_version = "3.6.1";
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -21,6 +22,7 @@ $bootstrap_version = "5.2.0";
 
     <!-- JS -->
     <script src="./lib/bootstrap/js/bootstrap.bundle.min.js?v=<?php echo $bootstrap_version; ?>"></script>
+    <script src="./lib/jquery/jquery.min.js?v=<?php echo $jquery_version; ?>"></script>
 </body>
 
 </html>
