@@ -1,8 +1,3 @@
-- :wave:		 	Hi, I’m Jacob
-- :man_technologist:		I study CS at @th-nuernberg
-- :chess_pawn:			I’m interested in playing chess
-
-<!---
-jacobissa/jacobissa is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- :wave: Hey, I’m Jacob
+- :mortar_board: I'm studying CS at [@th-nuernberg](https://github.com/th-nuernberg)
+- :man_technologist: I’m interested in programming
