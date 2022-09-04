@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".my-hostname").text(window.location.hostname);
+  $("#my-hostname").text(window.location.hostname);
   //document.addEventListener("contextmenu", (event) => event.preventDefault());
   $("#my-command-input").focus();
 

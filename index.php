@@ -28,17 +28,19 @@ $bootstrap_icons_version = "1.9.1";
                 <div class="rounded-circle p-2 me-1 bg-danger"></div>
                 <div class="rounded-circle p-2 me-1 bg-warning"></div>
                 <div class="rounded-circle p-2 me-1 bg-success"></div>
-                <div class="my-hostname mx-auto px-auto text-center text-light"></div>
+                <div class="mx-auto px-auto text-center text-light">Jacob Issa</div>
                 <div class="p-2 ms-1"></div>
                 <div class="p-2 ms-1"></div>
                 <div class="p-2 ms-1"></div>
             </div>
             <div class="overflow-hidden p-2">
                 <div class="h-100 overflow-auto p-2 text-warning" id="my-terminal">
-                    <div id="my-terminal-output"></div>
+                    <div id="my-terminal-output">
+                        <p class="mb-2">Hello! I'm Jacob Issa. Thank you for visiting my website.</p>
+                    </div>
                     <div class="pb-3" id="my-terminal-input">
                         <form id="my-command-form" autocomplete="off">
-                            <span class="my-hostname"></span>
+                            <span id="my-hostname"></span>
                             <span class="bi bi-chevron-right"></span>
                             <span id="my-command-input" role="textbox" contenteditable></span>
                             <span id="my-caret" class="border-warning">&nbsp;</span>
