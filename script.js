@@ -15,7 +15,11 @@ $(document).ready(function () {
   $("#my-command-form").submit(function (event) {
     let command = $("#my-command-input").val();
     $("#my-command-input").val("");
-    $("#my-terminal-output").append(api[command] + "<br>");
+    performCommand(api, command);
     event.preventDefault();
   });
 });
+
+function performCommand(api, command) {
+  $("#my-terminal-output").append(api[command] + "<br>");
+}
