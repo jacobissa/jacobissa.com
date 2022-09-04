@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $("#my-hostname").text(window.location.hostname);
-  document.addEventListener("contextmenu", (event) => event.preventDefault());
+  $(".my-hostname").text(window.location.hostname);
+  //document.addEventListener("contextmenu", (event) => event.preventDefault());
   $("#my-command-input").focus();
 
-  $("#my-terminal").click(function () {
+  $(document).click(function () {
     $("#my-command-input").focus();
   });
 
@@ -22,11 +22,11 @@ $(document).ready(function () {
     }
     $("#my-command-input").text("");
     performCommand(api, command);
-    $("#my-terminal").scrollTop($("#my-terminal").height());
+    $("#my-terminal-output").scrollTop($("#my-terminal-output").height());
   });
 
   $("#my-command-input").keypress(function (event) {
-    $("#my-terminal").scrollTop($("#my-terminal").height());
+    $("#my-terminal-output").scrollTop($("#my-terminal-output").height());
     if (event.which === 13) {
       event.preventDefault();
       $("#my-command-form").submit();
