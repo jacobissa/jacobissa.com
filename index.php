@@ -22,9 +22,9 @@ $bootstrap_icons_version = "1.9.1";
 </head>
 
 <body>
-    <div class="vh-100 vw-100 vstack fs-6 text-wrap lh-1 font-monospace overflow-hidden user-select-none bg-dark text-warning" id="my-terminal">
-        <div class="overflow-auto pb-2" id="my-terminal-output"></div>
-        <div class="sticky-bottom pt-2" id="my-terminal-input">
+    <div class="vh-100 vw-100 vstack fs-6 text-wrap lh-1 font-monospace overflow-auto user-select-none bg-dark text-warning" id="my-terminal">
+        <div id="my-terminal-output"></div>
+        <div class="pb-3" id="my-terminal-input">
             <form id="my-command-form" autocomplete="off">
                 <span id="my-hostname"></span>
                 <span class="bi bi-chevron-right"></span>

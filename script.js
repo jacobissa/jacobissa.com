@@ -22,10 +22,11 @@ $(document).ready(function () {
     }
     $("#my-command-input").text("");
     performCommand(api, command);
-    $("#my-terminal-output").scrollTop($("#my-terminal-output").height());
+    $("#my-terminal").scrollTop($("#my-terminal").height());
   });
 
   $("#my-command-input").keypress(function (event) {
+    $("#my-terminal").scrollTop($("#my-terminal").height());
     if (event.which === 13) {
       event.preventDefault();
       $("#my-command-form").submit();
