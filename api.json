@@ -1,4 +1,7 @@
 {
     "version": "1.0.0-beta",
-    "help": "How can I help you?"
+    "help": [
+        "How can I help you?",
+        "Are you Okay?"
+    ]
 }

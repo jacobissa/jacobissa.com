@@ -1,0 +1,24 @@
+#my-command-input {
+    caret-color: transparent;
+}
+
+#my-command-input:focus-visible {
+    outline: 0px;
+}
+
+#my-caret {
+    animation: blink 1s step-end infinite;
+    border-bottom: medium solid;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        --bs-border-opacity: 0;
+    }
+
+    50% {
+        --bs-border-opacity: 1;
+    }
+}

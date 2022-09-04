@@ -18,22 +18,21 @@ $bootstrap_icons_version = "1.9.1";
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.min.css?v=<?php echo $bootstrap_version; ?>">
     <link rel="stylesheet" type="text/css" href="./lib/bootstrap-icons/bootstrap-icons.css?v=<?php echo $bootstrap_icons_version; ?>">
-
+    <link rel="stylesheet" type="text/css" href="./style.css?v=<?php echo $site_version; ?>">
 </head>
 
 <body>
-    <div class="vh-100 vw-100 vstack bg-light" id="my-terminal">
-        <div class="bg-light overflow-auto pb-5 font-monospace user-select-none" id="my-terminal-output">
-        </div>
-        <form id="my-command-form" autocomplete="off" class="fixed-bottom container-fluid bg-warning">
-            <div class="input-group row">
-                <div class="input-group-text col-auto bg-transparent border-0" id="my-command-label">
-                    <span class="bi bi-chevron-right"></span>
-                </div>
-                <input type="text" class="form-control-plaintext col font-monospace" name="command" placeholder="" aria-label="Command" id="my-command-input" aria-describedby="my-command-label" autofocus />
+    <div class="vh-100 vw-100 vstack fs-6 text-wrap lh-1 font-monospace overflow-hidden user-select-none bg-dark text-warning" id="my-terminal">
+        <div class="overflow-auto pb-2" id="my-terminal-output"></div>
+        <div class="sticky-bottom pt-2" id="my-terminal-input">
+            <form id="my-command-form" autocomplete="off">
+                <span id="my-hostname"></span>
+                <span class="bi bi-chevron-right"></span>
+                <span id="my-command-input" role="textbox" contenteditable></span>
+                <span id="my-caret" class="border-warning">&nbsp;</span>
                 <input type="submit" hidden />
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
     <!-- JS -->
