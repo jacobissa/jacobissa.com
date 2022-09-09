@@ -2,22 +2,23 @@
     "version": {
         "value": "1.0.0-beta",
         "response": [
-            "This is version 1.0.0-beta of my website jacobissa.com"
+            "This is version 1.0.0-beta of jacobissa.com"
         ]
     },
     "help": {
         "response": [
             "The following commands are available:",
+            "&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal.",
             "&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display this help information.",
-            "&nbsp;&nbsp;impressum&nbsp;&nbsp;&nbsp;display the impressum.",
+            "&nbsp;&nbsp;imprint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the legal notice.",
             "&nbsp;&nbsp;privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the privacy policy.",
             "&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
             "&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
         ]
     },
-    "impressum": {
+    "imprint": {
         "response": [
-            "A personal, non-commercial website does not need an impressum."
+            "A personal, non-commercial website does not need legal notice."
         ]
     },
     "privacy": {
