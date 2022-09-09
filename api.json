@@ -8,7 +8,7 @@
     "help": {
         "response": [
             "The following commands are available:",
-            "&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal.",
+            "&nbsp;&nbsp;clean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clean the terminal.",
             "&nbsp;&nbsp;contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the contact informations.",
             "&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display this help information.",
             "&nbsp;&nbsp;imprint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the legal notice.",
@@ -16,6 +16,9 @@
             "&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
             "&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
         ]
+    },
+    "clean": {
+        "action": "$('#my-terminal-output').empty();"
     },
     "contact": {
         "response": [

@@ -1,3 +1,0 @@
-- :wave: Hey, I’m Jacob
-- :mortar_board: I'm studying CS at [@th-nuernberg](https://github.com/th-nuernberg)
-- :man_technologist: I’m interested in programming

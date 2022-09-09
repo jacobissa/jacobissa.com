@@ -50,11 +50,6 @@ $(document).ready(function () {
 });
 
 function performCommand(api, command) {
-  if (command === "clear") {
-    $("#my-terminal-output").empty();
-    return;
-  }
-
   let output_element = $("<p/>");
   output_element.addClass("mb-2");
   let request_element = "<span class='bi bi-chevron-right px-3'></span>";
@@ -66,8 +61,13 @@ function performCommand(api, command) {
   if (api_response === undefined) {
     response_element = command + " is undefined command.";
   } else {
-    for (let api_response_line of api_response["response"]) {
-      response_element += api_response_line + "<br/>";
+    if (api_response["response"] !== undefined) {
+      for (let api_response_line of api_response["response"]) {
+        response_element += api_response_line + "<br/>";
+      }
+    } else if (api_response["action"] !== undefined) {
+      console.log(api_response["action"]);
+      eval(api_response["action"]);
     }
   }
   output_element.html(request_element + response_element);
