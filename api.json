@@ -1,13 +1,33 @@
 {
-    "version": "1.0.0-beta",
-    "help": [
-        "How can I help you?",
-        "Are you Okay?"
-    ],
-    "Hi": [
-        "Hello!",
-        "I'm Jacob Issa",
-        "Thank you for visiting my website.",
-        "My website is under construction."
-    ]
+    "version": {
+        "value": "1.0.0-beta",
+        "response": [
+            "This is version 1.0.0-beta of my website jacobissa.com"
+        ]
+    },
+    "help": {
+        "response": [
+            "The following commands are available:",
+            "&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display this help information.",
+            "&nbsp;&nbsp;impressum&nbsp;&nbsp;&nbsp;display the impressum.",
+            "&nbsp;&nbsp;privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the privacy policy.",
+            "&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
+            "&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
+        ]
+    },
+    "impressum": {
+        "response": [
+            "A personal, non-commercial website does not need an impressum."
+        ]
+    },
+    "privacy": {
+        "response": [
+            "This website does not use cookies and does not collect any data from the users."
+        ]
+    },
+    "whoami": {
+        "response": [
+            "I'm Jacob Issa"
+        ]
+    }
 }

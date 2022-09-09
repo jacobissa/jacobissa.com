@@ -1,18 +1,33 @@
 $(document).ready(function () {
   $("#my-hostname").text(window.location.hostname);
-  //document.addEventListener("contextmenu", (event) => event.preventDefault());
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
   $("#my-command-input").focus();
 
   $(document).click(function () {
     $("#my-command-input").focus();
   });
 
-  let api = {};
-  $.getJSON("api.json", function (data) {
-    api = data;
-  }).fail(function () {
-    console.error("An error has occurred. Failed to load API.");
+  let key = "";
+  $.ajax({
+    url: "./license.key",
+    async: false,
+    success: function (data) {
+      key = data;
+    },
+    error: function () {
+      console.error("An error has occurred. Failed to load API.");
+    },
   });
+
+  let api = {};
+  $.post("./api.php", { key: key }, function (data) {
+    api = JSON.parse(data);
+  })
+    .done(function () {})
+    .fail(function () {
+      console.error("An error has occurred. Failed to load API.");
+    })
+    .always(function () {});
 
   $("#my-command-form").submit(function (event) {
     event.preventDefault();
@@ -51,15 +66,10 @@ function performCommand(api, command) {
   if (api_response === undefined) {
     response_element = command + " is undefined command.";
   } else {
-    if (Array.isArray(api_response)) {
-      for (let api_response_line of api_response) {
-        response_element += api_response_line + "<br/>";
-      }
-    } else {
-      response_element = api_response;
+    for (let api_response_line of api_response["response"]) {
+      response_element += api_response_line + "<br/>";
     }
   }
-
   output_element.html(request_element + response_element);
   $("#my-terminal-output").append(output_element);
 }
