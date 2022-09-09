@@ -1,0 +1,27 @@
+name: Deploy Release
+on:
+  release:
+    branches: [main]
+    types: [published]
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.1
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          server-dir: ./
+          state-name: .sync-state.json
+          exclude: |
+            **/.gitignore
+            **/.git/**
+            **/.github/**
