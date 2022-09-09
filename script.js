@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   let key = "";
   $.ajax({
-    url: "./license.key",
+    url: "./api.key",
     async: false,
     success: function (data) {
       key = data;
@@ -66,7 +66,6 @@ function performCommand(api, command) {
         response_element += api_response_line + "<br/>";
       }
     } else if (api_response["action"] !== undefined) {
-      console.log(api_response["action"]);
       eval(api_response["action"]);
     }
   }
