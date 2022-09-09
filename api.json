@@ -1,14 +1,15 @@
 {
     "version": {
-        "value": "1.0.0-beta",
+        "value": "1.0.0",
         "response": [
-            "This is version 1.0.0-beta of jacobissa.com"
+            "This is version 1.0.0 of jacobissa.com"
         ]
     },
     "help": {
         "response": [
             "The following commands are available:",
             "&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal.",
+            "&nbsp;&nbsp;contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the contact informations.",
             "&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display this help information.",
             "&nbsp;&nbsp;imprint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the legal notice.",
             "&nbsp;&nbsp;privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the privacy policy.",
@@ -16,14 +17,19 @@
             "&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
         ]
     },
-    "imprint": {
+    "contact": {
         "response": [
-            "A personal, non-commercial website does not need legal notice."
+            "Please, do not send me any spam or newsletters. My email address is: mail@jacobissa.com"
         ]
     },
     "privacy": {
         "response": [
             "This website does not use cookies and does not collect any data from the users."
+        ]
+    },
+    "imprint": {
+        "response": [
+            "A personal, non-commercial website does not need legal notice."
         ]
     },
     "whoami": {
