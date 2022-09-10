@@ -1,5 +1,5 @@
 <?php
-$api_file = file_get_contents("./api.json");
+$api_file = file_get_contents("./api/api.json");
 $api_json = json_decode($api_file, true);
 $version = $api_json['version']['value'];
 $jquery_version = "3.6.1";
@@ -35,7 +35,7 @@ $bootstrap_icons_version = "1.9.1";
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.min.css?v=<?php echo $bootstrap_version; ?>">
     <link rel="stylesheet" type="text/css" href="./lib/bootstrap-icons/bootstrap-icons.css?v=<?php echo $bootstrap_icons_version; ?>">
-    <link rel="stylesheet" type="text/css" href="./style.css?v=<?php echo $version; ?>">
+    <link rel="stylesheet" type="text/css" href="./css/style.css?v=<?php echo $version; ?>">
 </head>
 
 <body class="bg-light">
@@ -72,7 +72,7 @@ $bootstrap_icons_version = "1.9.1";
     <!-- JS -->
     <script src="./lib/bootstrap/js/bootstrap.bundle.min.js?v=<?php echo $bootstrap_version; ?>"></script>
     <script src="./lib/jquery/jquery.min.js?v=<?php echo $jquery_version; ?>"></script>
-    <script src="./script.js?v=<?php echo $version; ?>"></script>
+    <script src="./js/script.js?v=<?php echo $version; ?>"></script>
 </body>
 
 </html>
