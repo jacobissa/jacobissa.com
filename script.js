@@ -1,8 +1,22 @@
 $(document).ready(function () {
   $("#my-hostname").text(window.location.hostname);
-  document.addEventListener("contextmenu", (event) => event.preventDefault());
-  $("#my-command-input").focus();
 
+  function fixHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  window.addEventListener(
+    "resize",
+    function () {
+      fixHeight();
+    },
+    true
+  );
+  fixHeight();
+
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+  $("#my-command-input").focus();
   $(document).click(function () {
     $("#my-command-input").focus();
   });
