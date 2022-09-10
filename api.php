@@ -1,15 +1,14 @@
 <?php
-
 if (empty($_POST))
 {
-    header("Location: ./index.php", true, 301);
+    header("Location: ./", true, 301);
     exit();
 }
 
 $key = file_get_contents("./api.key");
 if ($_POST['key'] != $key)
 {
-    header("Location: ./index.php", true, 301);
+    echo "{}";
     exit();
 }
 
