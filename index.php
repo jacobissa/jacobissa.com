@@ -39,7 +39,7 @@ $bootstrap_icons_version = "1.9.1";
 </head>
 
 <body class="bg-light">
-    <div class="vh-100 vw-100 p-3 user-select-none fs-6 text-wrap lh-sm font-monospace">
+    <div class="vh-100 vw-100 p-3 pb-5 user-select-none fs-6 text-wrap lh-sm font-monospace">
         <div class="h-100 w-100 overflow-hidden vstack p-0 bg-dark shadow border border-secondary border-3 rounded-4">
             <div class="bg-secondary hstack p-2">
                 <div class="rounded-circle p-2 me-1 bg-danger"></div>
@@ -67,6 +67,9 @@ $bootstrap_icons_version = "1.9.1";
                 </div>
             </div>
         </div>
+    </div>
+    <div class="bg-secondary fixed-bottom hstack">
+        <button class="btn pe-none bg-dark rounded-0 border-0 text-light"><span class="bi bi-windows"></span></button>
     </div>
 
     <!-- JS -->
