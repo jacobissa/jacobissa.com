@@ -7,23 +7,18 @@ $(document).ready(function () {
     $("#my-command-input").focus();
   });
 
-  let key = "";
-  $.ajax({
-    url: "./api.key",
-    async: false,
-    success: function (data) {
-      key = data;
-    },
-    error: function () {
-      console.error("An error has occurred. Failed to load API.");
-    },
-  });
-
   let api = {};
-  $.post("./api.php", { key: key }, function (data) {
-    api = JSON.parse(data);
-  })
-    .done(function () {})
+  $.ajax("./api.key")
+    .done(function (api_key) {
+      $.post("./api.php", { key: api_key })
+        .done(function (data) {
+          api = JSON.parse(data);
+        })
+        .fail(function () {
+          console.error("An error has occurred. Failed to load API.");
+        })
+        .always(function () {});
+    })
     .fail(function () {
       console.error("An error has occurred. Failed to load API.");
     })
