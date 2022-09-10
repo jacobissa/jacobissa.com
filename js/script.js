@@ -22,9 +22,9 @@ $(document).ready(function () {
   });
 
   let api = {};
-  $.ajax("./api.key")
+  $.ajax("./api/api.key")
     .done(function (api_key) {
-      $.post("./api.php", { key: api_key })
+      $.post("./api/api.php", { key: api_key })
         .done(function (data) {
           api = JSON.parse(data);
         })
