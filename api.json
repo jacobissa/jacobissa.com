@@ -1,8 +1,8 @@
 {
     "version": {
-        "value": "1.0.1",
+        "value": "1.0.2",
         "response": [
-            "This is version 1.0.1 of jacobissa.com"
+            "This is version 1.0.2 of jacobissa.com"
         ]
     },
     "help": {
@@ -32,7 +32,7 @@
     },
     "imprint": {
         "response": [
-            "A personal, non-commercial website does not need legal notice."
+            "A personal, non-commercial website does not need a legal notice."
         ]
     },
     "whoami": {

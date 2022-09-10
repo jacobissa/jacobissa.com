@@ -51,7 +51,7 @@ function performCommand(api, command) {
   request_element += "<span>" + command + "</span><br/>";
 
   let response_element = "";
-  let api_response = api[command];
+  let api_response = api[command.toLowerCase()];
 
   if (api_response === undefined) {
     response_element = command + " is undefined command.";
