@@ -17,5 +17,6 @@ Header always set X-Xss-Protection "1; mode=block"
 </IfModule>
 
 ## Redirect ##
+Redirect 301 /index.html /
 ErrorDocument 403 https://jacobissa.com
 ErrorDocument 404 https://jacobissa.com
