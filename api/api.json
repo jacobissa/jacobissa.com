@@ -1,8 +1,8 @@
 {
     "version": {
-        "value": "1.0.3",
+        "value": "1.0.4",
         "response": [
-            "This is version 1.0.3 of jacobissa.com"
+            "This is version 1.0.4 of jacobissa.com"
         ]
     },
     "help": {
