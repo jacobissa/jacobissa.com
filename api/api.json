@@ -1,43 +1,53 @@
 {
-    "version": {
-        "value": "1.0.4",
-        "response": [
-            "This is version 1.0.4 of jacobissa.com"
-        ]
-    },
-    "help": {
-        "response": [
-            "The following commands are available:",
-            "&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal.",
-            "&nbsp;&nbsp;contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the contact informations.",
-            "&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display this help information.",
-            "&nbsp;&nbsp;imprint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the legal notice.",
-            "&nbsp;&nbsp;privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the privacy policy.",
-            "&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
-            "&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
-        ]
-    },
-    "clear": {
-        "action": "$('#my-terminal-output').empty();"
-    },
-    "contact": {
-        "response": [
-            "Please, do not send me any spam or newsletters. My email address is: mail@jacobissa.com"
-        ]
-    },
-    "privacy": {
-        "response": [
-            "This website does not use cookies and does not collect any data from the users."
-        ]
-    },
-    "imprint": {
-        "response": [
-            "A personal, non-commercial website does not need a legal notice."
-        ]
-    },
-    "whoami": {
-        "response": [
-            "I'm Jacob Issa"
-        ]
-    }
+	"version": {
+		"value": "1.0.5",
+		"response": [
+			"This is version 1.0.5 of jacobissa.com"
+		]
+	},
+	"help": {
+		"response": [
+			"The following commands are available:",
+			"&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal.",
+			"&nbsp;&nbsp;contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the contact informations.",
+			"&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display this help information.",
+			"&nbsp;&nbsp;imprint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the legal notice.",
+			"&nbsp;&nbsp;privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the privacy policy.",
+			"&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
+			"&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
+		]
+	},
+	"clear": {
+		"action": "$('#my-terminal-output').empty();"
+	},
+	"contact": {
+		"response": [
+			"Please, do not send me any spam or newsletters. My email address is: mail@jacobissa.com"
+		]
+	},
+	"privacy": {
+		"response": [
+			"This website does not use cookies and does not collect any data from the users."
+		]
+	},
+	"imprint": {
+		"response": [
+			"A personal, non-commercial website does not need a legal notice."
+		]
+	},
+	"xing": {
+		"response": [
+			"https://www.xing.com/profile/Jacob_Issa05472/"
+		]
+	},
+	"linkedin": {
+		"response": [
+			"https://www.linkedin.com/in/jacob-issa/"
+		]
+	},
+	"whoami": {
+		"response": [
+			"I'm Jacob Issa"
+		]
+	}
 }
