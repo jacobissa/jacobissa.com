@@ -1,28 +1,19 @@
-.vh-100 {
-    height: calc(var(--vh, 1vh) * 100) !important;
+#background {
+	background-image: url("../img/background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-#my-command-input {
-    caret-color: transparent;
+.no-dropdown-toggle::after {
+	display: none !important;
 }
 
-#my-command-input:focus-visible {
-    outline: 0px;
+.flip-v,
+.flip-v::before {
+	transform: scaleX(-1);
 }
 
-#my-caret {
-    animation: blink 1s step-end infinite;
-    border-bottom: medium solid;
-}
-
-@keyframes blink {
-
-    from,
-    to {
-        --bs-border-opacity: 0;
-    }
-
-    50% {
-        --bs-border-opacity: 1;
-    }
+.modal-backdrop.show {
+	opacity: 0;
 }
