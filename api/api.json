@@ -1,8 +1,8 @@
 {
 	"version": {
-		"value": "1.0.5",
+		"value": "1.0.6",
 		"response": [
-			"This is version 1.0.5 of jacobissa.com"
+			"This is version 1.0.6 of jacobissa.com"
 		]
 	},
 	"help": {
@@ -14,7 +14,9 @@
 			"&nbsp;&nbsp;imprint&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the legal notice.",
 			"&nbsp;&nbsp;privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the privacy policy.",
 			"&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
-			"&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website."
+			"&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website.",
+			"&nbsp;&nbsp;linkedin&nbsp;&nbsp;&nbsp;&nbsp;display the link of my LinkedIn profile.",
+			"&nbsp;&nbsp;xing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the link of my XING profile."
 		]
 	},
 	"clear": {
