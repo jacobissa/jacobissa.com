@@ -1,8 +1,8 @@
 {
 	"version": {
-		"value": "1.0.6",
+		"value": "1.0.7",
 		"response": [
-			"This is version 1.0.6 of jacobissa.com"
+			"This is version 1.0.7 of jacobissa.com"
 		]
 	},
 	"help": {
@@ -16,7 +16,8 @@
 			"&nbsp;&nbsp;version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the current version of this website.",
 			"&nbsp;&nbsp;whoami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the owner of this website.",
 			"&nbsp;&nbsp;linkedin&nbsp;&nbsp;&nbsp;&nbsp;display the link of my LinkedIn profile.",
-			"&nbsp;&nbsp;xing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the link of my XING profile."
+			"&nbsp;&nbsp;xing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the link of my XING profile.",
+			"&nbsp;&nbsp;github&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display the link of my GitHub profile."
 		]
 	},
 	"clear": {
@@ -45,6 +46,11 @@
 	"linkedin": {
 		"response": [
 			"https://www.linkedin.com/in/jacob-issa/"
+		]
+	},
+	"github": {
+		"response": [
+			"https://github.com/jacobissa/"
 		]
 	},
 	"whoami": {
